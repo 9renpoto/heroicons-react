@@ -1,5 +1,5 @@
 import * as React from "react";
-interface Props extends React.SVGProps<SVGSVGElement> {
+export interface Props extends React.SVGProps<SVGSVGElement> {
   size?: number;
 }
 
@@ -17,10 +17,7 @@ const TruckOutline = (
       ref={svgRef}
       {...props}
     >
-      <path
-        fill="#fff"
-        d="M9 17a2 2 0 11-4 0 2 2 0 014 0zm10 0a2 2 0 11-4 0 2 2 0 014 0z"
-      />
+      <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zm10 0a2 2 0 11-4 0 2 2 0 014 0z" />
       <path
         strokeLinecap="round"
         strokeLinejoin="round"

@@ -1,6 +1,6 @@
 {
   "name": "heroicons-react",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "React components for heroicons",
   "types": "build/index.d.ts",
   "main": "build/index.js",
@@ -11,7 +11,7 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "fetch": "rm -rf heroicons/ && git clone https://github.com/refactoringui/heroicons/",
+    "fetch": "rm -rf heroicons/ && git clone https://github.com/tailwindlabs/heroicons",
     "gen": "npm run fetch && ts-node --project bin/tsconfig.json --files bin/build.ts",
     "cleanup": "./cleanup.sh",
     "build": "npm run gen && rollup -c rollup.config.ts && npm run cleanup",
